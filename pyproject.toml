@@ -1,0 +1,18 @@
+[project]
+name = "ciphernova-intelligent-contract"
+version = "1.0.0"
+description = "Reusable GenLayer Intelligent Contract for bounded pairwise record consistency checks."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "genlayer-test==0.29.2",
+    "genvm-linter==0.11.0",
+    "cloudpickle>=3,<4",
+    "jsonschema>=4,<5",
+    "pytest>=8,<9",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

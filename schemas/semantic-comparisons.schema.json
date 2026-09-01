@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ciphernova.local/schema/v1/semantic-comparisons.schema.json",
+  "title": "CipherNova v1 semantic comparison output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["comparisons"],
+  "properties": {
+    "comparisons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["left_record_id", "right_record_id", "status"],
+        "properties": {
+          "left_record_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_-]{0,47}$"},
+          "right_record_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_-]{0,47}$"},
+          "status": {"enum": ["CONSISTENT", "CONFLICT", "UNRESOLVED"]}
+        }
+      }
+    }
+  }
+}
