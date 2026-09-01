@@ -3,6 +3,7 @@
 CipherNova is a sophisticated GenLayer Intelligent Contract designed for deterministically evaluating the consistency of bounded external records. By leveraging the Equivalence Principle and Optimistic Democracy on the GenLayer protocol, CipherNova ensures that disparate data sources can be materially compared against a declared claim.
 
 **Deployed Contract Address (GenLayer Studio):** `0xE5ea5f5ff4d2cE92f86C539AA757E2e06a76912B`
+**Explorer Link:** [View on GenLayer Studio Explorer](https://explorer-studio.genlayer.com/address/0xE5ea5f5ff4d2cE92f86C539AA757E2e06a76912B)
 
 ## Overview
 
